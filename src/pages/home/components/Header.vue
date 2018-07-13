@@ -4,11 +4,10 @@
             <i class="iconfont">&#xe600;</i>
         </router-link>
         <div class="input">
-            <input type="text" name="search" class="input-search">
+            <input type="text" name="search" class="home-search">
         </div>
         <div class="right">
-            火星
-            <i class="iconfont">&#xe604;</i>
+            <input type="submit" value="搜索" class="home-submit">
         </div>
     </div>
 </template>
@@ -41,7 +40,7 @@
         .input {
             flex: 1;
             padding: 0 1rem;
-            .input-search {
+            .home-search {
                 width: 100%;
                 border-radius: 0.2rem;
                 height: 50%;
@@ -50,10 +49,14 @@
             }
         }
         .right {
+            width: 3rem;
             font-size: 0.8rem;
-            height: 100%;
-            .iconfont {
-                font-size: 0.8rem;
+
+            .home-submit {
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: #fff;
             }
         }
     }

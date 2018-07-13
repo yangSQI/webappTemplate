@@ -1,14 +1,16 @@
 <template>
     <div class="container">
-        <h1 class="page-header">el psy congroo!</h1>
+        <home-header></home-header>
     </div>
 </template>
 
 <script>
     import axios from 'axios'
+    import HomeHeader from "./components/Header";
 
     export default {
         name: "Home",
+        components: {HomeHeader},
     }
 </script>
 
