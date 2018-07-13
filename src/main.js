@@ -12,6 +12,7 @@ import BScroll from 'better-scroll'
 
 import 'style/reset.css'
 import 'style/border.css'
+import 'style/iconfont.css'
 import 'swiper/dist/css/swiper.css'
 
 FastClick.attach(document.body);
