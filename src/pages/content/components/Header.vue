@@ -1,5 +1,8 @@
 <template>
     <div class="header">
+        <router-link to="/" class="left">
+            <i class="iconfont">&#xe600;</i>
+        </router-link>
         <div class="input">
             <input type="text" name="search" class="home-search">
         </div>
@@ -11,21 +14,32 @@
 
 <script>
     export default {
-        name: "HomeHeader"
+        name: "ContentHeader"
 
     }
 </script>
 
 <style scoped lang="less">
     .header {
-        width: 100%;
         height: 2.5rem;
         background: #00bcd4;
+        display: flex;
         line-height: 2.5rem;
         position: fixed;
         top: 0;
         left: 0;
-        display: flex;
+        .left {
+            width: 2rem;
+            height: 100%;
+            color: #fff;
+            .iconfont {
+                display: block;
+                width: 100%;
+                height: 100%;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+        }
         .input {
             flex: 1;
             padding: 0 1rem;

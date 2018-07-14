@@ -1,16 +1,20 @@
 <template>
     <div class="container">
         <home-header></home-header>
+        <home-content></home-content>
     </div>
 </template>
 
 <script>
     import axios from 'axios'
-    import HomeHeader from "./components/Header";
-
+    import HomeHeader from "./components/Header"
+    import HomeContent from './components/Content'
     export default {
         name: "Home",
-        components: {HomeHeader},
+        components: {
+            HomeHeader,
+            HomeContent,
+        },
     }
 </script>
 
