@@ -7,7 +7,7 @@
 
 <script>
     import axios from 'axios'
-    import HomeHeader from "./components/Header"
+    import HomeHeader from '@/pages/common/Header'
     import HomeContent from './components/Content'
     export default {
         name: "Home",
